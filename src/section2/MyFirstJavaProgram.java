@@ -4,34 +4,24 @@ import java.awt.Color;
 import org.jointheleague.graphical.robot.Robot;
 
 public class MyFirstJavaProgram {
-	
 	public static void main(String[] args) {
-		
-		// START HERE
-	Robot guy = new Robot();
-		guy.setSpeed(25);
-        guy.penDown();
-        guy.hide();
-        guy.setPenWidth(100);
-        guy.setRandomPenColor();
-		guy.move(100);
-		guy.turn(-90);
-		guy.setRandomPenColor();
-		guy.move(100);
-		guy.turn(-90);
-		guy.setRandomPenColor();
-		guy.move(100);
-		guy.turn(-90);
-		guy.setRandomPenColor();
-		guy.move(100);
-		for(int i = 0; i < 4; i++) {
-			//color
-			guy.setRandomPenColor();
-			//move
-			guy.move(100);
-			//turn
-			guy.turn(-90);
-			
+		Robot mom = new Robot();
+		mom.setX(500);
+		mom.setX(500);
+		mom.penDown();
+		mom.hide();
+		mom.setSpeed(100);
+		for (int i = 0; i < 3; i++) {
+			mom.move(30);
+			mom.turn(90);
+			mom.setRandomPenColor();
+		}
+		mom.move(30);
+		mom.setRandomPenColor();
+		for (int i = 0; i < 3; i++) {
+			mom.move(30);
+			mom.turn(90);
+			mom.setRandomPenColor();
 		}
 	}
 }

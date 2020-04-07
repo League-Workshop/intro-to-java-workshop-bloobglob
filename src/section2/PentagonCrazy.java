@@ -9,30 +9,31 @@ import org.jointheleague.graphical.robot.Robot;
 public class PentagonCrazy {
 
 	private void makePrettyThings() {
-		// 1. Create a new Robot
-Robot guy = new Robot();
-guy.hide();
+		// 1. Create a new Robot\
+		Robot lufat=new Robot ();
+		lufat.hide();
 		// 3. Put the robot's pen down
-guy.penDown();
+		lufat.penDown();
 		// 8. Make the robot go at maximum speed (100)
-guy.setSpeed(100);
+		lufat.setSpeed(100);
 		// 9. Set the pen to a color that you like for the shape
-guy.setRandomPenColor();
-		// 4. Make a variable for the number of sides you want (can’t test this one)
-int sides = 5;
+		lufat.setRandomPenColor();
+		// 4. Make a variable for the number of sides you want (can’t test this one)\
+		int side = 9;
 		// 5. Make a second variable for the angle you want the robot to turn. Hint: you can divide in Java using "/". Can’t test until step 6
-int turn = 360/sides;
-		// 7. Use a for loop to repeat steps #2 to #11, 200 times. When this is done you should see a pentagon
-for(int i = 0; i < 200; i++) {
-			// 2. Move the robot 200 pixels
-	guy.move(i);
+		int angle = (360/side); 
+		// 7. Use a for loop to repeat steps #2 to #11, 200 times. When this is done you should see a pentagon\
+		for (int i = 0; i < 200; i++) {
+			// 2. Move the robot 200 pixels\
+		lufat.move(i);
 			// 10. Change the previous line of code to make the robot move "i" pixels instead of 200 
 	
 			// 6. Turn the robot the amount in your angle variable
-	guy.turn(turn);
+		lufat.turn(angle);
 			// 11. Turn the robot one more degree
-guy.turn(1);
-	}}
+		lufat.turn(1);
+		}
+	}
 
 	// Variations:
 	// *12. make the pattern really huge
